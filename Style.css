@@ -1,0 +1,23 @@
+html{
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+header{
+    background-color: red;
+    color: white;
+    padding: 0rem 0rem;
+}
+header P {
+    font-size: 1rem;
+    text-align: right;
+}
+body h1 {
+    text-align: center;
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
