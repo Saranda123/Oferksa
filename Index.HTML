@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta etiquetas para la configuración de la página -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Normaliza el CSS para que se vea igual en todos los navegadores -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tipografía de la página -->
+    <link rel="stylesheet" href="css/Style.css">
+    <!-- Código CSS -->
+    <title>OFERKSA</title>
+    <!-- Título de la página -->
+    <meta name="description" content="OFERKSA es una inmobiliaria en Bogotá que ofrece servicios de venta, alquiler y asesoramiento inmobiliario. Encuentra tu hogar ideal con nosotros.">
+    <!-- Descripción de la página -->
+
+       
+</head>
+<body>
+    
+
+    <header>
+        <img src="img/OFERKSA.png" alt="Logo OFERKSA" width="80" height="80"/>
+        <!-- Logo de la página -->
+         <h1>OFERKSA <span>Inmobiliaria</span></h1>
+         <!-- Título principal de la página -->
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <!-- Navegación principal de la página -->
+            <a href="index.html" class="inicio">Inicio</a>
+            <a href="Nosotros.html"class="sobre-nosotros">Sobre Nosotros</a>
+            <a href="EnVenta.html"class="en-venta">En Venta</a>
+            <a target="_blank" href="https://wa.me/3142238141"class="contactanos">Contáctanos</a>
+        </nav>
+    </div>
+    
+
+    <section>
+        <!-- Sección de búsqueda de propiedades -->
+        <h2 >Encuentra tu hogar ideal</h2>
+        
+        <form>
+            <label>Ubicación</label>
+            <input type="text" name="ubicacion" />
+        
+            <label">Habitaciones</label>
+            <input type="number" name="habitaciones"/>
+        
+            <label>Baños</label>
+            <input type="number" name="banos"/>
+            <div>
+                <label>Valor min</label>
+                <input id="filterPriceRangeFrom" type="text" class="input-generic" placeholder="$ Valor desde ">
+                <label>Max</label>
+                <input type="text" id="precio" placeholder="$ Valor hasta" class="input-generic"/>
+            </div>
+        
+            <button type="submit">Buscar</button>
+        </form>
+    </section>   
+    <main>
+        <!-- Sección de servicios de la página -->
+        <h2>Servicios</h2>
+        <section>
+            <h3>Venta</h3>
+            <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
+            <a href="EnVenta.html">Mas información</a>
+        </section>
+        <section>
+            <h3>Avaluos</h3>
+            <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
+            <a href="EnVenta.html">Mas información</a>
+        </section>
+    </main>
+    <section>
+        <!-- Sección de destacados de la página -->
+        <h2>Destacados</h2>
+    </section>
+    <section>
+        <!-- Sección de contacto de la página -->
+        <h2>Contáctanos</h2>
+
+        <form >
+            <fieldset>
+                <legend>Contactabos llenando el formulario</legend>
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre"/>
+                </div>
+
+                <div>
+                    <label>Telefono</label>
+                    <input type="tel" placeholder="Telefono"/>
+                </div>
+
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="Correo"/>
+                </div>
+                
+                <div>
+                    <label>Asunto</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                
+                <div>
+                    <label>Mensaje</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <nav class="navegacion-secundaria contenedor">
+            <legend>contactanos</legend>
+            <a target="_blank" href="https://wa.me/3142238141">Whatsapp</a>
+            <a target="_blank" href="https://web.facebook.com/Oferksainm?_rdc=1&_rdr#">Facebook</a>
+            <a target="_blank" href="https://www.tiktok.com/@oferksa?fbclid=IwY2xjawJ1IntleHRuA2FlbQIxMABicmlkETE2MlhiVEFpemV6ZjdVVmFmAR4s35SvYEg8vXf8UaBkfCHph7If79ibMpm0kuhBlelhjK55V0MG_Y3x9Vqv-w_aem_NeAUfIfGjHb0e_ASmSlzow">Tiktok</a>
+            <a target="_blank" href="https://wa.me/3142238141">Instagram</a>
+        </nav>
+        <!--Redes Sociales de la inmobiliaria -->
+        <div>
+            <p>todos los derechos reservados. OFERKSA</p>
+        </div>
+        <!-- parte final de la pagina-->
+    </footer>
+</body>
+</html>
+
