@@ -21,14 +21,13 @@
        
 </head>
 <body>
-    
 
     <header>
         <img src="img/OFERKSA.png" alt="Logo OFERKSA" width="80" height="80"/>
         <!-- Logo de la página -->
-         <h1>OFERKSA <span>Inmobiliaria</span></h1>
-         <!-- Título principal de la página -->
-          <a href="#">ingresar</a>
+        <h1>OFERKSA <span>Inmobiliaria</span></h1>
+        <!-- Título principal de la página -->
+        <a href="#">ingresar</a>
     </header>
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
@@ -36,95 +35,142 @@
             <a href="index.html" class="inicio">Inicio</a>
             <a href="Nosotros.html"class="sobre-nosotros">Sobre Nosotros</a>
             <a href="EnVenta.html"class="en-venta">En Venta</a>
-            <a target="_blank" href="https://wa.me/3142238141"class="contactanos">Contáctanos</a>
+            <a target="#"class="contactanos">Noticias</a>
         </nav>
-    </div>
+    </div> <!--.nav-bg-->
     
 
-    <section>
+    <section class="questionario">
         <!-- Sección de búsqueda de propiedades -->
-        <h2 >Encuentra tu hogar ideal</h2>
-        
-        <form>
-            <label>Ubicación</label>
-            <input type="text" name="ubicacion" />
-        
-            <label">Habitaciones</label>
-            <input type="number" name="habitaciones"/>
-        
-            <label>Baños</label>
-            <input type="number" name="banos"/>
-            <div>
-                <label>Valor min</label>
-                <input id="filterPriceRangeFrom" type="text" class="input-generic" placeholder="$ Valor desde ">
-                <label>Max</label>
-                <input type="text" id="precio" placeholder="$ Valor hasta" class="input-generic"/>
+         <div class="questionario-info">
+            <h2 >Encuentra tu hogar ideal</h2>
+            <form class="buscador">
+                <div class="buscador-campos">
+                    <label>Ubicación</label>
+                    <input type="text" name="ubicacion" />
+                </div>
+                <div class="buscador-campos">
+                    <label">Habitaciones</label>
+                    <input type="number" name="habitaciones"/>
+                </div>
+                <div class="buscador-campos">
+                    <label>Baños</label>
+                    <input type="number" name="baños"/>
+                </div>
+                <div class="buscador-campos">
+                    <label>Valor min</label>
+                    <input id="filterPriceRangeFrom" type="text" class="input-generic" placeholder="$ Valor desde ">
+                </div>
+                <div class="buscador-campos">
+                    <label>Valor Max</label>
+                    <input type="text" id="precio" placeholder="$ Valor hasta" class="input-generic"/>
+                </div>
+                <div class="buscador-campos">
+                    <button type="submit" class="boton">Buscar</button>
+                </div>               
             </div>
-        
-            <button type="submit">Buscar</button>
-        </form>
-    </section>   
-    <main>
+         </div>
+    </section>   <!--.questionario-->
+    <section  class="contenedor">   
         <!-- Sección de servicios de la página -->
         <h2>Servicios</h2>
-        <section>
-            <h3>Venta</h3>
-            <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-            <a href="EnVenta.html">Mas información</a>
-        </section>
-        <section>
-            <h3>Avaluos</h3>
-            <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-            <a href="EnVenta.html">Mas información</a>
-        </section>
-    </main>
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Venta</h3>
+                <div class="iconos">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="44"  height="44"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-home">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
+                    </svg>
+                </div>
+                <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
+                <a href="EnVenta.html" class="boton">Mas información</a>
+            </section>
+            <section class="servicio">
+                <h3>Ariendo</h3>
+                <div class="iconos">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="44"  height="44"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-home">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
+                    </svg>
+                </div>
+                <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
+                <a href="EnVenta.html" class="boton">Mas información</a>
+            </section>
+            <section class="servicio">
+                <h3>Avaluos</h3>
+                <div class="iconos">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="44"  height="44"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                        <path d="M9 17h6" />
+                        <path d="M9 13h6" />
+                    </svg>
+                </div>
+                <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
+                <a href="EnVenta.html" class="boton">Mas información</a>
+            </section>
+            <section class="servicio">
+                <h3>Creditos</h3>
+                <div class="iconos">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="44"  height="44"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pig">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M15 11v.01" />
+                        <path d="M16 3l0 3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342a6.008 6.008 0 0 1 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3z" />
+                    </svg>
+                </div>
+                <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
+                <a href="EnVenta.html" class="boton">Mas información</a>
+            </section>
+        </div> <!--.servicios-->
+    </section>
     <section>
         <!-- Sección de destacados de la página -->
         <h2>Destacados</h2>
     </section>
-    <section>
+    <section class="formulario">
         <!-- Sección de contacto de la página -->
         <h2>Contáctanos</h2>
 
         <form >
             <fieldset>
-                <legend>Contactabos llenando el formulario</legend>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Nombre"/>
-                </div>
+                <legend>Contactanos Llenando Todos Los Campos Del Formulario</legend>
+                <div class="contenedor_campos">
+                    <div class="campos">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Nombre"/>
+                    </div>
+                    <div class="campos">
+                        <label>Telefono</label>
+                        <input class="input-text" type="tel" placeholder="Telefono"/>
+                    </div> <!--.campos-->
 
-                <div>
-                    <label>Telefono</label>
-                    <input type="tel" placeholder="Telefono"/>
+                    <div class="campos">
+                        <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Correo"/>
+                    </div><!--.campos-->
+                    
+                    <div class="campos">
+                        <label>Asunto</label>
+                        <textarea class="input-text asunto" name="" id=""></textarea>
+                    </div><!--.campos-->
+                    
+                    <div class="campos">
+                        <label>Mensaje</label>
+                        <textarea class="input-text mensaje" name="" id=""></textarea>
+                    </div><!--.campos-->
+                </div><!--.contenedor_campos-->               
+                <div class="alinear-derecha flex">
+                    <input type="submit" value="Enviar" class="boton w-100"/>
                 </div>
-
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Correo"/>
-                </div>
-                
-                <div>
-                    <label>Asunto</label>
-                    <textarea name="" id=""></textarea>
-                </div>
-                
-                <div>
-                    <label>Mensaje</label>
-                    <textarea name="" id=""></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar"/>
-                </div>
-
             </fieldset>
         </form>
-    </section>
+    </section> <!--.formulario-->
     <footer>
         <nav class="navegacion-secundaria contenedor">
             <legend>Nuestras Redes Sociales</legend>
-            <a target="_blank" href="https://wa.me/3054602348"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg> Whatsapp</a>
+            <a target="_blank" href="https://wa.me/3142238141"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg> Whatsapp</a>
             <a target="_blank" href="https://web.facebook.com/Oferksainm?_rdc=1&_rdr#"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg> Facebook</a>
             <a target="_blank" href="https://www.tiktok.com/@oferksa?fbclid=IwY2xjawJ1IntleHRuA2FlbQIxMABicmlkETE2MlhiVEFpemV6ZjdVVmFmAR4s35SvYEg8vXf8UaBkfCHph7If79ibMpm0kuhBlelhjK55V0MG_Y3x9Vqv-w_aem_NeAUfIfGjHb0e_ASmSlzow"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg> Tiktok</a>
             <a target="_blank" href="https://www.instagram.com/oferksa_j.e/"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg> Instagram</a>
@@ -132,7 +178,7 @@
         <!--Redes Sociales de la inmobiliaria -->
         <div class="derechos">
             <p>© todos los derechos reservados. OFERKSA</p>
-        </div>
+        </div> <!--.derechos-->
         <!-- parte final de la pagina-->
     </footer>
 </body>

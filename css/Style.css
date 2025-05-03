@@ -1,9 +1,12 @@
 :root{
-    --color1: #00239b;
-    --color2: #d0393e;
+    --color1: #000fc0;
+    --color2: #e60000;
     --blanco: #ffffff;
     --oscuro: #000000;
+    --grisClaro: #dfd9f3;
+    --gris: #757575;
 }
+/*Globales*/
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -14,7 +17,48 @@ html{
 body{
     font-size: 16px;
     font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0;
+}
+.boton{
+    background-color: var(--color2);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+@media (min-width: 780px) {
+    .boton{
+        width: auto;
+    }  
+    
+}
+.boton:hover{
+    cursor: pointer;
+}
+/*Tipografia*/
+h1{
+    font-size: 3.25rem
+}
+h2{
+    font-size: 2.25rem
+}
+h3{
+    font-size: 1.25rem
+}
+h1, h2, h3{
+    text-align: center;
+}
+/*Titulos*/
 header{
     display: flex;
     background-color: white;
@@ -24,7 +68,6 @@ header{
 header h1{
     color: var(--color1);
     justify-self: center;
-    font-size: 3rem;
     margin: auto;
 }
 h1 span{
@@ -36,27 +79,38 @@ header img{
 }
 
 header a{
-    color: var(--color1);
+    color: var(--color2);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
 }
-
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
+/*utilidades*/
+.w-100{
+    width: 100%;
 }
-
+@media (min-width: 768px) {  
+    .w-100{
+        margin-top: 4rem;
+        width: auto;
+    }
+}
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+/*Navegacion*/
 .nav-bg{
     background-color: var(--color2);
 }
-.navegacion-principal{
+.navegacion-principal, .navegacion-secundaria{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 @media (min-width: 768px) {
-    .navegacion-principal{
+    .navegacion-principal, .navegacion-secundaria{
         flex-direction: row;
         justify-content: space-between;
     }  
@@ -76,35 +130,6 @@ header a{
     background-color: var(--color1);
     color: var(--oscuro);
 }
-.nosotros{
-    background-image: url(../img/bogota.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    position: relative;
-    color: var(--oscuro);
-}
-.informacion_nosotros{
-    position: absolute;
-    background-color:rgba(255, 255, 255, 0.7);
-    width: 100%;
-    height: 100%;
-}
-footer{
-    background-color: var(--oscuro);
-}
-.navegacion-secundaria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-@media (min-width: 768px) {
-    .navegacion-secundaria{
-        flex-direction: row;
-        justify-content: space-between;
-    }  
-    
-}
 .navegacion-secundaria a{
     padding: 1rem;
     color: var(--blanco);
@@ -112,6 +137,192 @@ footer{
 }
 .navegacion-secundaria legend{
     color: var(--blanco);
+}
+/*Buscador*/
+.questionario{
+    background-image: url(../img/casa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .questionario{
+        background-image: url(../img/CasaPortada.jpeg);
+        background-position: center;
+        height: 600px;
+        width: 100%;
+        margin: 0;
+    }  
+    
+}
+.questionario-info{
+    position:absolute;
+    margin-top: 4rem;
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px) {  
+    .questionario-info{
+        margin-top: 10%;
+        background-color:rgba(146, 146, 146, 0.7);
+    }
+}
+.buscador{
+    font-weight: 700;
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    text-align: center;
+    align-items: center;
+}
+@media (min-width: 995px){
+    .buscador{
+        grid-template-rows: 30px 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+    
+}
+@media (min-width: 768px) {
+    .buscador{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px;
+        
+    }  
+    
+}
+
+/*Sobre Nosotros*/
+.nosotros{
+    background-image: url(../img/bogota.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    color: var(--oscuro);
+}
+@media (min-width: 768px) {
+    .nosotros{
+        height: 450px;
+    }  
+    
+}
+.informacion_nosotros{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+.informacion_nosotros h2,
+.informacion_nosotros p{
+    color: var(--grisClaro);
+}
+/*Servicios*/
+
+@media (min-width: 768px) {  
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+        margin: 0 5rem;
+    }
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.servicio h3{
+    font-size: 1.5rem;
+    color: var(--color2);
+}
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--color1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Contacto*/
+.formulario{
+    background-color: var(--gris);
+    width: min(100rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {  
+    .contenedor_campos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto 20rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .campos:nth-child(3), .campos:nth-child(4), .campos:nth-child(5){
+        grid-column: 1 / 3;
+    }
+}
+.campos{
+    margin-bottom: 1rem;
+}
+.campos label{
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width: 768px) {  
+    .datos-personales{
+        display: flex;
+    }
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin:0 1rem ;
+}
+.asunto{
+    height:4.8rem
+}
+.mensaje{
+    height: 20rem;
+}
+/*Footer*/
+footer{
+    background-color: var(--oscuro);
+    padding: 1rem;
 }
 .derechos{
     max-width: 120rem;
