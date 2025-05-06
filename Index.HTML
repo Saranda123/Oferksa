@@ -23,11 +23,13 @@
 <body>
 
     <header>
-        <img src="img/OFERKSA.png" alt="Logo OFERKSA" width="80" height="80"/>
+        <a href="Index.HTML">
+            <img src="img/OFERKSA.png" alt="Logo OFERKSA" width="80" height="80"/>
+        </a>
         <!-- Logo de la página -->
         <h1>OFERKSA <span>Inmobiliaria</span></h1>
         <!-- Título principal de la página -->
-        <a href="#">ingresar</a>
+        <a href="ingresar.html">ingresar</a>
     </header>
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
@@ -35,7 +37,7 @@
             <a href="index.html" class="inicio">Inicio</a>
             <a href="Nosotros.html"class="sobre-nosotros">Sobre Nosotros</a>
             <a href="EnVenta.html"class="en-venta">En Venta</a>
-            <a target="#"class="contactanos">Noticias</a>
+            <a href="Noticias.html"class="contactanos">Noticias</a>
         </nav>
     </div> <!--.nav-bg-->
     
@@ -87,7 +89,7 @@
                 <a href="EnVenta.html" class="boton">Mas información</a>
             </section>
             <section class="servicio">
-                <h3>Ariendo</h3>
+                <h3>Arriendo</h3>
                 <div class="iconos">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="44"  height="44"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-home">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -125,10 +127,56 @@
             </section>
         </div> <!--.servicios-->
     </section>
-    <section>
+    <section class="contenedor">
         <!-- Sección de destacados de la página -->
         <h2>Destacados</h2>
-    </section>
+        <div class="grid">
+            <div class="inmueble">
+                <a href="inmueble.html">
+                    <img src="img/IMG1.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <div class="inmueble__info">
+                        <p class="inmueble__nombre">Inmueble en venta en Puente Aranda</p>
+                        <p class="inmueble__conjunto">el conjunto Parques de Primavera</p>
+                        <p class="inmueble__precio">$284.000.000</p>
+                        <p class="inmueble__especificaciones">52m2 3hab 2baños</p>
+                    </div>
+                </a>
+            </div> <!--.inmueble-->
+            <div class="inmueble">
+                <a href="inmueble.html">
+                    <img src="img/IMG2.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <div class="inmueble__info">
+                        <p class="inmueble__nombre">Inmueble en venta en Kennedy</p>
+                        <p class="inmueble__conjunto">el conjunto la Armonia</p>
+                        <p class="inmueble__precio">$258.000.000</p>
+                        <p class="inmueble__especificaciones">54m2 3hab 2baños</p> 
+                    </div>
+                </a>
+            </div><!--.inmueble-->
+            <div class="inmueble">
+                <a href="inmueble.html">
+                    <img src="img/IMG3.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <div class="inmueble__info">
+                        <p class="inmueble__nombre">Inmueble en venta en Bosa</p>
+                        <p class="inmueble__conjunto">el conjunto Villa Verde</p>
+                        <p class="inmueble__precio">$182.875.000</p>
+                        <p class="inmueble__especificaciones">61m2 3hab 2baños</p>  
+                    </div>
+                </a>
+            </div><!--.inmueble-->
+            <div class="inmueble">
+                <a href="inmueble.html">
+                    <img src="img/IMG4.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <div class="inmueble__info">
+                        <p class="inmueble__nombre">Inmueble en venta en Soacha</p>
+                        <p class="inmueble__conjunto">el conjunto Macadamia</p>
+                        <p class="inmueble__precio">$166.000.000</p>
+                        <p class="inmueble__especificaciones">55m2 3hab 2baños</p>
+                    </div>
+                </a>
+            </div><!--.inmueble-->
+        </div><!--.grid-->
+    </section><!--.contenedor-->
     <section class="formulario">
         <!-- Sección de contacto de la página -->
         <h2>Contáctanos</h2>
@@ -177,7 +225,7 @@
         </nav>
         <!--Redes Sociales de la inmobiliaria -->
         <div class="derechos">
-            <p>© todos los derechos reservados. OFERKSA</p>
+            <p>© todos los derechos reservados 2025. OFERKSA</p>
         </div> <!--.derechos-->
         <!-- parte final de la pagina-->
     </footer>
