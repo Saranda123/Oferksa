@@ -48,29 +48,21 @@
             <h2 >Encuentra tu hogar ideal</h2>
             <form class="buscador">
                 <div class="buscador-campos">
-                    <label>Ubicación</label>
-                    <input type="text" name="ubicacion" />
+                    <select class="buscador-ubicacion">
+                        <option disabled selected>Ubicacion</option>
+                        <option>Fontibon</option>
+                        <option>Kennedy</option>
+                        <option>Bosa</option>
+                        <option>Ciudad Bolivar</option>
+                        <option>Puente Aranda</option>
+                        <option>Usme</option>
+                        <option>Soacha</option>
+                    </select>
                 </div>
-                <div class="buscador-campos">
-                    <label">Habitaciones</label>
-                    <input type="number" name="habitaciones"/>
-                </div>
-                <div class="buscador-campos">
-                    <label>Baños</label>
-                    <input type="number" name="baños"/>
-                </div>
-                <div class="buscador-campos">
-                    <label>Valor min</label>
-                    <input id="filterPriceRangeFrom" type="text" class="input-generic" placeholder="$ Valor desde ">
-                </div>
-                <div class="buscador-campos">
-                    <label>Valor Max</label>
-                    <input type="text" id="precio" placeholder="$ Valor hasta" class="input-generic"/>
-                </div>
-                <div class="buscador-campos">
-                    <button type="submit" class="boton">Buscar</button>
+                <div>
+                    <button type="submit" class="boton buscar">Buscar</button>
                 </div>               
-            </div>
+            </form>
          </div>
     </section>   <!--.questionario-->
     <section  class="contenedor">   
