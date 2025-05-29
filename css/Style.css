@@ -45,6 +45,8 @@ body{
 .boton:hover{
     cursor: pointer;
 }
+    
+
 /*Tipografia*/
 a{
     text-decoration: none;
@@ -104,7 +106,15 @@ header a{
 .alinear-derecha{
     justify-content: flex-end;
 }
-
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
 /*Navegacion*/
 .nav-bg{
     background-color: var(--color2);
@@ -145,7 +155,7 @@ header a{
 }
 /*Buscador*/
 .questionario{
-    background-image: url(../img/Apartamentos.jpg);
+    background-image: url(../img/Celular-B.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -153,10 +163,11 @@ header a{
     width: 100%; 
     margin: 0; 
     padding: 0;
+    background-position:center center;
 }
 @media (min-width: 768px) {
     .questionario{
-        background-image: url(../img/CasaPortada.jpeg);
+        background-image: url(../img/Computador-B.jpg);
         background-position: center;
         height: 600px;
         width: 100%;
@@ -225,12 +236,13 @@ header a{
 }
 /*Sobre Nosotros*/
 .nosotros{
-    background-image: url(../img/bogota.jpg);
+    background-image: url(../img/Computador-A.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
     position: relative;
     color: var(--oscuro);
+    background-position:center center;
 }
 @media (min-width: 768px) {
     .nosotros{
@@ -378,6 +390,29 @@ header a{
 .inmueble__especificaciones{
     font-size: 1.3rem;
     margin: .5rem 0;
+}
+/**Noticias**/
+.entrada{
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {  
+    .articulos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .entrada--principal{
+        grid-column: 1 / 3;
+    }
+}
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    padding-bottom: 1.5rem;
+}
+.entrada--final{
+    border-bottom: none;
+    padding-bottom: 0;
 }
 /*Footer*/
 footer{
