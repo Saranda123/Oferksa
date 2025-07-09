@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta etiquetas para la configuración de la página -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Normaliza el CSS para que se vea igual en todos los navegadores -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Tipografía de la página -->
-    <link rel="stylesheet" href="css/Style.css">
-    <!-- Código CSS -->
+
     <title>OFERKSA</title>
     <!-- Título de la página -->
-    <meta name="description" content="OFERKSA es una inmobiliaria en Bogotá que ofrece servicios de venta, alquiler y asesoramiento inmobiliario. Encuentra tu hogar ideal con nosotros.">
+    <meta name="description" content="OFERKSA es una inmobiliaria en Bogotá que ofrece servicios de venta, alquiler y asesoramiento inmobiliario. Encuentra tu hogar ideal con nosotros">
     <!-- Descripción de la página -->
 
-       
+    <!--prefetch-->
+
+
+    <!--preload-->
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+    <!-- Código CSS -->
+    <link rel="preload" href="build/css/normalize.css" as="style">
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <!-- Normaliza el CSS para que se vea igual en todos los navegadores -->
+    <link rel="preload" href="src/img/OFERKSA.png" as="image">
 </head>
 <body>
 
     <header>
         <a href="Index.HTML">
-            <img src="img/OFERKSA.png" alt="Logo OFERKSA" width="80" height="80"/>
+            <img src="src/img/OFERKSA.png" alt="Logo OFERKSA" width="80" height="80"/>
         </a>
         <!-- Logo de la página -->
         <h1>OFERKSA <span>Inmobiliaria</span></h1>
@@ -78,7 +85,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="EnVenta.html" class="boton">Mas información</a>
+                <a href="EnVenta.html" class="boton">Mas información sobre nuestros servicios</a>
             </section>
             <section class="servicio">
                 <h3>Arriendo</h3>
@@ -89,7 +96,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="arriendo.html" class="boton">Mas información</a>
+                <a href="arriendo.html" class="boton">Mas información sobre nuestros servicios</a>
             </section>
             <section class="servicio">
                 <h3>Avaluos</h3>
@@ -103,7 +110,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="avaluos.html" class="boton">Mas información</a>
+                <a href="avaluos.html" class="boton">Mas información sobre nuestros servicios</a>
             </section>
             <section class="servicio">
                 <h3>Creditos</h3>
@@ -115,7 +122,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="Credito.html" class="boton">Mas información</a>
+                <a href="Credito.html" class="boton">Mas información sobre nuestros servicios</a>
             </section>
         </div> <!--.servicios-->
     </section>
@@ -125,7 +132,7 @@
         <div class="grid">
             <div class="inmueble">
                 <a href="inmueble.html">
-                    <img src="img/IMG1.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <img loading="lazy" src="src/img/IMG1.png" alt="imagen apartamento" class="inmueble__imagen"/>
                     <div class="inmueble__info">
                         <p class="inmueble__nombre">Inmueble en venta en Puente Aranda</p>
                         <p class="inmueble__conjunto">Conjunto Parques de Primavera</p>
@@ -136,7 +143,7 @@
             </div> <!--.inmueble-->
             <div class="inmueble">
                 <a href="inmueble.html">
-                    <img src="img/IMG2.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <img loading="lazy" src="src/img/IMG2.png" alt="imagen apartamento" class="inmueble__imagen"/>
                     <div class="inmueble__info">
                         <p class="inmueble__nombre">Inmueble en venta en Kennedy</p>
                         <p class="inmueble__conjunto">Conjunto la Armonia</p>
@@ -147,7 +154,7 @@
             </div><!--.inmueble-->
             <div class="inmueble">
                 <a href="inmueble.html">
-                    <img src="img/IMG3.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <img loading="lazy" src="src/img/IMG3.png" alt="imagen apartamento" class="inmueble__imagen"/>
                     <div class="inmueble__info">
                         <p class="inmueble__nombre">Inmueble en venta en Bosa</p>
                         <p class="inmueble__conjunto">Conjunto Villa Verde</p>
@@ -158,7 +165,7 @@
             </div><!--.inmueble-->
             <div class="inmueble">
                 <a href="inmueble.html">
-                    <img src="img/IMG4.png" alt="imagen apartamento" class="inmueble__imagen"/>
+                    <img loading="lazy" src="src/img/IMG4.png" alt="imagen apartamento" class="inmueble__imagen"/>
                     <div class="inmueble__info">
                         <p class="inmueble__nombre">Inmueble en venta en Soacha</p>
                         <p class="inmueble__conjunto">Conjunto Macadamia</p>
@@ -178,27 +185,27 @@
                 <legend>Contactanos Llenando Todos Los Campos Del Formulario</legend>
                 <div class="contenedor_campos">
                     <div class="campos">
-                        <label>Nombre</label>
-                        <input class="input-text" type="text" placeholder="Nombre"/>
+                        <label for="name">Nombre</label>
+                        <input class="input-text" type="text" placeholder="Nombre" id="name"/>
                     </div>
                     <div class="campos">
-                        <label>Telefono</label>
-                        <input class="input-text" type="tel" placeholder="Telefono"/>
+                        <label for="cellphone">Telefono</label>
+                        <input class="input-text" type="tel" placeholder="Telefono" id="cellphone"/>
                     </div> <!--.campos-->
 
                     <div class="campos">
-                        <label>Correo</label>
-                        <input class="input-text" type="email" placeholder="Correo"/>
+                        <label for="email">Correo</label>
+                        <input class="input-text" type="email" placeholder="Correo" id="email"/>
                     </div><!--.campos-->
                     
                     <div class="campos">
-                        <label>Asunto</label>
-                        <textarea class="input-text asunto" name="" id=""></textarea>
+                        <label for="asunt">Asunto</label>
+                        <textarea class="input-text asunto" id="asunt"></textarea>
                     </div><!--.campos-->
                     
                     <div class="campos">
-                        <label>Mensaje</label>
-                        <textarea class="input-text mensaje" name="" id=""></textarea>
+                        <label for="message">Mensaje</label>
+                        <textarea class="input-text mensaje" id="message"></textarea>
                     </div><!--.campos-->
                 </div><!--.contenedor_campos-->               
                 <div class="alinear-derecha flex">
@@ -221,6 +228,7 @@
         </div> <!--.derechos-->
         <!-- parte final de la pagina-->
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>
 

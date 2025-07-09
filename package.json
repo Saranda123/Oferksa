@@ -1,0 +1,33 @@
+{
+  "name": "oferksa",
+  "version": "1.0.0",
+  "description": "Pagina para una inmobiliaria",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saranda123/Oferksa.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "NPM",
+    "GULP",
+    "JS",
+    "INMOBILIARIA"
+  ],
+  "author": "Santiago Aranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saranda123/Oferksa/issues"
+  },
+  "homepage": "https://github.com/Saranda123/Oferksa#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  }
+}
