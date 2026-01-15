@@ -1,0 +1,21 @@
+@use 'variables' as v;
+/*Tipografia*/
+a{
+    text-decoration: none;
+    color: v.$oscuro;
+}
+h1{
+    font-size: 4.25rem
+}
+h2{
+    font-size: 2.75rem
+}
+h3{
+    font-size: 2.25rem
+}
+h1, h2, h3{
+    text-align: center;
+}
+p{
+    font-size: 1.5rem;
+}

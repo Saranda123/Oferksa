@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+/*Footer*/
+footer{
+    background-color:v.$oscuro;
+    padding: 1rem;
+}
+.derechos{
+    color: v.$blanco;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+}

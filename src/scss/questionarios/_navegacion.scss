@@ -1,0 +1,48 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*Navegacion*/
+@include m.tablet{
+    .navegacion{
+        &.fijo{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }
+}
+.nav-bg{
+    background-color: v.$color2;
+}
+.navegacion-principal, .navegacion-secundaria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.navegacion-principal a{
+    color: v.$blanco;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;    
+    padding: 1rem;
+    display: block; /* Hace que el enlace ocupe todo el ancho disponible */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    text-align: center; /* Centra el texto dentro del enlace */
+}
+.navegacion-principal a:hover{
+    background-color: v.$color1;
+    color: v.$oscuro;
+}
+.navegacion-secundaria a{
+    padding: 1rem;
+    color: v.$blanco;
+    text-decoration: none;
+}
+.navegacion-secundaria legend{
+    color: v.$blanco;
+}

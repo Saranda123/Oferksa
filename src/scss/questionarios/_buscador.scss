@@ -1,0 +1,74 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*Buscador*/
+.questionario{
+    background-image: v.$imgPrincipal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+    background-position:center center;
+    @include m.tablet {
+        background-image: v.$imgPrincipalComputador;
+        background-position: center;
+        height: 600px;
+        width: 100%;
+        margin: 0;
+    }
+}
+.questionario-info{
+    position:absolute;
+    margin-top: 4rem;
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include m.tablet {
+        margin: 15% 30%;
+        width: 40%;
+        height: 30%;
+        background-color:rgba(146, 146, 146, 0.7);
+    }
+}
+.questionario-info h2{
+    margin-bottom: 2rem;
+}
+.buscador{
+    font-weight: 700;
+    display: grid;
+    grid-template-rows: 40px 40px ;
+    text-align: center;
+    align-items: center;
+    column-gap: 1rem;
+    align-items: end;
+    @include m.tablet {
+        @include m.grid(3, 1rem);
+    }
+}
+.buscador-campos{
+    @include m.tablet {
+        grid-column: 1 / 3;
+    }
+}
+
+.buscador-ubicacion{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.buscador-ubicacion:hover{
+    cursor: pointer;
+}
+.buscar{
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1.5rem;
+}

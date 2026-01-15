@@ -1,0 +1,10 @@
+/*Grid*/
+@use 'mixins' as m;
+
+.grid{
+    @include m.grid(2, 1rem);
+
+    @include m.tablet{
+        @include m.grid(4, 1rem);
+    }
+}

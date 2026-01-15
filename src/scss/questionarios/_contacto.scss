@@ -1,0 +1,58 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*Contacto*/
+.formulario{
+    background-color: v.$gris;
+    width: min(80rem, 100%);
+    margin: 1rem auto 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.contenedor_campos{
+    @include m.tablet {
+        @include m.grid(2, 1rem);
+        grid-template-rows: auto auto auto 20rem;
+        row-gap: 1rem;
+    }
+}
+.campos:nth-child(3), .campos:nth-child(4), .campos:nth-child(5){
+    @include m.tablet{
+        grid-column: 1 / 3;
+    }
+}
+.campos{
+    margin-bottom: 1rem;
+}
+.campos label{
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.datos-personales{
+    @include m.tablet {
+        display: flex;
+    }
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin:0 1rem ;
+}
+.asunto{
+    height:4.8rem
+}
+.mensaje{
+    height: 20rem;
+}

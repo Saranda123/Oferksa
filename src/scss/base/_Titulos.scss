@@ -1,0 +1,27 @@
+@use 'variables' as v;
+/*Titulos*/
+header{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+}
+header h1{
+    color: v.$color1;
+    justify-self: center;
+    margin: auto;
+}
+h1 span{
+    font-size: 3rem;
+    color: v.$color2;
+}
+header img{
+    max-height: 80px;
+}
+
+header a{
+    color: v.$color2;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}

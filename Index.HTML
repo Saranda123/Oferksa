@@ -21,9 +21,6 @@
     <!--preload-->
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
-    <!-- Código CSS -->
-    <link rel="preload" href="build/css/normalize.css" as="style">
-    <link rel="stylesheet" href="build/css/normalize.css">
     <!-- Normaliza el CSS para que se vea igual en todos los navegadores -->
     <link rel="preload" href="src/img/OFERKSA.png" as="image">
 </head>
@@ -38,7 +35,7 @@
         <!-- Título principal de la página -->
         <a href="ingresar.html">ingresar</a>
     </header>
-    <div class="nav-bg">
+    <div class="nav-bg navegacion">
         <nav class="navegacion-principal contenedor">
             <!-- Navegación principal de la página -->
             <a href="index.html" class="inicio">Inicio</a>
@@ -85,7 +82,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="EnVenta.html" class="boton">Mas información sobre nuestros servicios</a>
+                <a href="EnVenta.html" class="boton">Mas información</a>
             </section>
             <section class="servicio">
                 <h3>Arriendo</h3>
@@ -96,7 +93,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="arriendo.html" class="boton">Mas información sobre nuestros servicios</a>
+                <a href="arriendo.html" class="boton">Mas información</a>
             </section>
             <section class="servicio">
                 <h3>Avaluos</h3>
@@ -110,7 +107,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="avaluos.html" class="boton">Mas información sobre nuestros servicios</a>
+                <a href="avaluos.html" class="boton">Mas información</a>
             </section>
             <section class="servicio">
                 <h3>Creditos</h3>
@@ -122,7 +119,7 @@
                     </svg>
                 </div>
                 <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
-                <a href="Credito.html" class="boton">Mas información sobre nuestros servicios</a>
+                <a href="Credito.html" class="boton">Mas información</a>
             </section>
         </div> <!--.servicios-->
     </section>
@@ -137,7 +134,22 @@
                         <p class="inmueble__nombre">Inmueble en venta en Puente Aranda</p>
                         <p class="inmueble__conjunto">Conjunto Parques de Primavera</p>
                         <p class="inmueble__precio">$284.000.000</p>
-                        <p class="inmueble__especificaciones">52m2 3hab 2baños</p>
+                        <ul class="inmueble__especificaciones">
+                            <li>
+                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="Habitacion">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/icono_wc.svg" alt="Baño">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/Meter-Square--Streamline-Tabler.svg" alt="metros">
+                                <p>52</p>
+                            </li>
+                        </ul>
+
+                        <a href="inmueble.html" class="boton anuncio-boton">Ver Propiedad</a>
                     </div>
                 </a>
             </div> <!--.inmueble-->
@@ -148,7 +160,21 @@
                         <p class="inmueble__nombre">Inmueble en venta en Kennedy</p>
                         <p class="inmueble__conjunto">Conjunto la Armonia</p>
                         <p class="inmueble__precio">$258.000.000</p>
-                        <p class="inmueble__especificaciones">54m2 3hab 2baños</p> 
+                        <ul class="inmueble__especificaciones">
+                            <li>
+                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="Habitacion">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/icono_wc.svg" alt="Baño">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/Meter-Square--Streamline-Tabler.svg" alt="metros">
+                                <p>54</p>
+                            </li>
+                        </ul>
+                        <a href="inmueble.html" class="boton anuncio-boton">Ver Propiedad</a>
                     </div>
                 </a>
             </div><!--.inmueble-->
@@ -159,7 +185,21 @@
                         <p class="inmueble__nombre">Inmueble en venta en Bosa</p>
                         <p class="inmueble__conjunto">Conjunto Villa Verde</p>
                         <p class="inmueble__precio">$182.875.000</p>
-                        <p class="inmueble__especificaciones">61m2 3hab 2baños</p>  
+                        <ul class="inmueble__especificaciones">
+                            <li>
+                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="Habitacion">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/icono_wc.svg" alt="Baño">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/Meter-Square--Streamline-Tabler.svg" alt="metros">
+                                <p>61</p>
+                            </li>
+                        </ul> 
+                        <a href="inmueble.html" class="boton anuncio-boton">Ver Propiedad</a>
                     </div>
                 </a>
             </div><!--.inmueble-->
@@ -170,7 +210,21 @@
                         <p class="inmueble__nombre">Inmueble en venta en Soacha</p>
                         <p class="inmueble__conjunto">Conjunto Macadamia</p>
                         <p class="inmueble__precio">$166.000.000</p>
-                        <p class="inmueble__especificaciones">55m2 3hab 2baños</p>
+                        <ul class="inmueble__especificaciones">
+                            <li>
+                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="Habitacion">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/icono_wc.svg" alt="Baño">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="build/img/Meter-Square--Streamline-Tabler.svg" alt="metros">
+                                <p>55</p>
+                            </li>
+                        </ul>
+                        <a href="inmueble.html" class="boton anuncio-boton">Ver Propiedad</a>
                     </div>
                 </a>
             </div><!--.inmueble-->

@@ -1,0 +1,56 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*destacados*/
+.inmueble{
+    background-color: v.$blanco;
+    border: 1px solid v.$gris;
+}
+.inmueble__imagen{
+    width: 100%;
+}
+.inmueble__nombre{
+    color: v.$color2;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: .5rem 0;
+    padding: 0 1rem;
+}
+.inmueble__conjunto,
+.inmueble__precio{
+    color: v.$color1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: .5rem 0;
+    padding: 0 1rem;
+}
+
+.inmueble__precio{
+    font-size: 2rem;
+}
+
+.inmueble__especificaciones{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 1rem;
+    li{
+       flex: 1;
+       display: flex;
+        
+        img{
+            flex: 0 0 4rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-weight: bold;
+        }
+    }
+}
+
+.anuncio-boton{
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+@use 'mixins' as m;
+/*utilidades*/
+.w-100{
+    width: 100%;
+    @include m.tablet {
+        margin-top: 4rem;
+        width: 100%;
+    }
+}
+
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*Sobre Nosotros*/
+.nosotros{
+    background-image: url(../../src/img/Computador-A.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    color: v.$oscuro;
+    background-position:center center;
+    @include m.tablet {
+        height: 450px;
+    }
+}
+.informacion_nosotros{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+.informacion_nosotros h2,
+.informacion_nosotros p{
+    color: v.$grisClaro;
+}
