@@ -14,3 +14,11 @@ export function css( done ){
 export function dev(){
     watch('src/scss/**/*.scss', css)
 }
+
+const { series } = require('gulp');
+
+function defaultTask(done) {
+  done();
+}
+
+exports.default = defaultTask;
