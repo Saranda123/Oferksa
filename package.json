@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
-    "build": "npx gulp"
+    "build": "npx gulp-cli"
   },
   "repository": {
     "type": "git",
