@@ -38,4 +38,5 @@ body{
 }
 .boton:hover{
     cursor: pointer;
+    background-color: darken(v.$color2, 7%);
 }
