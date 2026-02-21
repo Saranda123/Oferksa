@@ -1,16 +1,16 @@
-Oferksa
+#Oferksa
 Proyecto full stack en desarrollo para la gestión y visualización de inmuebles.
 Actualmente se está construyendo aplicando buenas prácticas de arquitectura backend, normalización de base de datos y consumo de APIs con React.
 
-Tecnologías
-Frontend
+##Tecnologías
+###Frontend
     React (Vite)
     JavaScript
     SCSS
-Backend
+###Backend
     Node.js
     Express
-Base de Datos
+###Base de Datos
     PostgreSQL
 
 Base de Datos
