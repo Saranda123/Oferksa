@@ -41,4 +41,3 @@ Crear tabla imagenes_inmueble
 Crear tabla solicitudes_contacto
 Crear endpoint GET /inmuebles
 Conectar React con backend
-
