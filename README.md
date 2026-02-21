@@ -1,8 +1,10 @@
-Oferksa
+# Oferksa
+
 Proyecto full stack en desarrollo para la gestión y visualización de inmuebles.
 Actualmente se está construyendo aplicando buenas prácticas de arquitectura backend, normalización de base de datos y consumo de APIs con React.
 
-Tecnologías
+## Tecnologías
+
 Frontend
     React (Vite)
     JavaScript
@@ -13,7 +15,8 @@ Backend
 Base de Datos
     PostgreSQL
 
-Base de Datos
+## Base de Datos
+
 Modelo relacional normalizado.
 Tablas actuales:
     usuarios
@@ -26,20 +29,23 @@ Relaciones implementadas:
     inmuebles.estado_id → estados_inmueble.estado_id
 Se están utilizando claves foráneas para mantener la integridad de los datos.
 
-Estado Actual
+## Estado Actual
+
     Migración parcial del proyecto a React
     Página Home funcional
     Página Nosotros componentizada
     JOIN entre tablas funcionando correctamente
     Integridad referencial validada
 
-Próximos Pasos
+## Próximos Pasos
+
     Crear tabla imagenes_inmueble
     Crear tabla solicitudes_contacto
     Crear endpoint GET /api/inmuebles
     Conectar React con backend
 
-Ejecutar el Proyecto
+## Ejecutar el Proyecto
+
 Backend
     npm install
     npm run dev
