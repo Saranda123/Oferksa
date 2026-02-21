@@ -46,10 +46,13 @@ Se están utilizando claves foráneas para mantener la integridad de los datos.
 
 ## Ejecutar el Proyecto
 
-Backend
+### Backend
+
     npm install
     npm run dev
-Frontend
+
+### Frontend
+
     cd oferksa-react
     npm install
     npm run dev
