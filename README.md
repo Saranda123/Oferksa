@@ -5,25 +5,34 @@ Actualmente se está construyendo aplicando buenas prácticas de arquitectura ba
 
 ## Tecnologías
 
-Frontend
+### Frontend
+
     React (Vite)
     JavaScript
     SCSS
-Backend
+
+### Backend
+
     Node.js
     Express
-Base de Datos
+
+### Base de Datos
+
     PostgreSQL
 
-## Base de Datos
+## Base de datos
 
 Modelo relacional normalizado.
-Tablas actuales:
+
+### Tablas actuales
+
     usuarios
     inmuebles
     tipos_inmueble
     estados_inmueble
-Relaciones implementadas:
+
+### Relaciones implementadas
+
     inmuebles.usuario_id → usuarios.usuario_id
     inmuebles.tipo_id → tipos_inmueble.tipo_id
     inmuebles.estado_id → estados_inmueble.estado_id
@@ -46,12 +55,12 @@ Se están utilizando claves foráneas para mantener la integridad de los datos.
 
 ## Ejecutar el Proyecto
 
-### Backend
+### backend
 
     npm install
     npm run dev
 
-### Frontend
+### frontend
 
     cd oferksa-react
     npm install
