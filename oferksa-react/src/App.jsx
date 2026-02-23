@@ -16,7 +16,12 @@ function App() {
                 <Route path="/en-venta" element={<Index />} />
             </Routes>
             <Footer />
+             <div>
+                <script src="JS/script.js"></script>
+            </div>
         </Router>
+       
+        
     );
 }
 
