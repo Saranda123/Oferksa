@@ -5,10 +5,11 @@ import Vision from "../Components/vision";
 function Nosotros() {
     return (
         <>
+            <Experiencia />
             <div className="mision_vision">
                 <Mision /><Vision />
             </div>
-            <Experiencia />
+            
         </>
     )
 }
