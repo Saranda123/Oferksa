@@ -3,7 +3,7 @@ function Servicios() {
         <section className="contenedor">
             <h2>Servicios</h2>
             <div className="servicios">
-                <section className="servicio">
+                <section className="servicio scroll-reveal" data-scroll>
                     <h3>Venta</h3>
                     <div className="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="#000000" className="icon icon-tabler icons-tabler-filled icon-tabler-home">
@@ -14,7 +14,7 @@ function Servicios() {
                     <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
                     <a href="EnVenta.html" className="boton">Mas información</a>
                 </section>
-                <section className="servicio">
+                <section className="servicio scroll-reveal" data-scroll>
                     <h3>Arriendo</h3>
                     <div className="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="#000000" className="icon icon-tabler icons-tabler-filled icon-tabler-home">
@@ -25,7 +25,7 @@ function Servicios() {
                     <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
                     <a href="arriendo.html" className="boton">Mas información</a>
                 </section>
-                <section className="servicio">
+                <section className="servicio scroll-reveal" data-scroll>
                     <h3>Avaluos</h3>
                     <div className="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-file-description">
@@ -39,7 +39,7 @@ function Servicios() {
                     <p>Encuentra tu apartamento ideal en Bogotá y alrededores en nuestro catálogo de apartamentos.</p>
                     <a href="avaluos.html" className="boton">Mas información</a>
                 </section>
-                <section className="servicio">
+                <section className="servicio scroll-reveal" data-scroll>
                     <h3>Creditos</h3>
                     <div className="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-pig">

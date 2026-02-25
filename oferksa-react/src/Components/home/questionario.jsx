@@ -2,7 +2,7 @@ function Questionario({ tipo = "simple" }) {
     if (tipo === "simple") {
         return (
             <section className="questionario">
-                <div className="questionario-info">
+                <div className="questionario-info scroll-reveal" data-scroll>
                     <h2>Encuentra tu hogar ideal</h2>
                     <form className="buscador">
                         <div className="buscador-campos">
@@ -29,7 +29,7 @@ function Questionario({ tipo = "simple" }) {
     if (tipo === "completo") {
         return (
             <section className="questionario">
-                <div className="questionario-info">
+                <div className="questionario-info scroll-reveal" data-scroll>
                     <h2>Busqueda Avanzada</h2>
                     <form className="buscador">
                         <div className="buscador-campos">

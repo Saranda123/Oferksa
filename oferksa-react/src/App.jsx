@@ -6,8 +6,13 @@ import Index from "./Pages/index";
 import Nosotros from "./Pages/nosotros";
 import Venta from "./Pages/en-venta";
 import Enter from "./Pages/ingresar";
+import useScrollAnimation from "./JS/scroll";
+import useFixedNavigation from "./JS/navegacion";
 
 function App() {
+    useScrollAnimation();
+    useFixedNavigation();
+
     return (
         <Router>
             <Header />
@@ -19,10 +24,6 @@ function App() {
                 <Route path="/ingresar" element={<Enter />} />
             </Routes>
             <Footer />
-             <div>
-                <script src="JS/navegacion.js"></script>
-                <script src="JS/scroll.js"></script>
-            </div>
         </Router>
        
         
