@@ -1,30 +1,31 @@
 import { useEffect } from 'react';
 
-function MiComponente() {
+function useScrollAnimation() {
   useEffect(() => {
-    // 1. Definir el observer dentro del efecto
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          console.log('Element is in view:', entry.target);
-          // Aquí puedes añadir clases de animación, ej: entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 }); // Opcional: se activa cuando el 10% es visible
+    const elements = document.querySelectorAll('[data-scroll]');
 
-    // 2. Seleccionar los elementos (asegúrate de que las clases existan en tu JSX)
-    const servicios = document.querySelectorAll('.servicios .servicio');
-    const questionario = document.querySelector('.questionario .questionario-info');
+    if (elements.length === 0) {
+      return undefined;
+    }
 
-    // 3. Empezar a observar
-    servicios.forEach(el => observer.observe(el));
-    if (questionario) observer.observe(questionario);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
-    // 4. LIMPIEZA: Muy importante en React para evitar fugas de memoria
+    elements.forEach((element) => observer.observe(element));
+
     return () => {
       observer.disconnect();
     };
-  }, []); // [] asegura que esto solo se ejecute una vez al montar el componente
-
-  return ( questionario.jsx );
+  }, []);
 }
+
+export default useScrollAnimation;

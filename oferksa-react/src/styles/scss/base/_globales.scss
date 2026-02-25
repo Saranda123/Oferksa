@@ -40,3 +40,13 @@ body{
     cursor: pointer;
     background-color: ligtness(v.$color2, -7%);
 }
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(2.5rem);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

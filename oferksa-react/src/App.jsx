@@ -6,8 +6,11 @@ import Index from "./Pages/index";
 import Nosotros from "./Pages/nosotros";
 import Venta from "./Pages/en-venta";
 import Enter from "./Pages/ingresar";
+import useScrollAnimation from "./JS/scroll";
 
 function App() {
+    useScrollAnimation();
+
     return (
         <Router>
             <Header />
@@ -19,10 +22,6 @@ function App() {
                 <Route path="/ingresar" element={<Enter />} />
             </Routes>
             <Footer />
-             <div>
-                <script src="JS/navegacion.js"></script>
-                <script src="JS/scroll.js"></script>
-            </div>
         </Router>
        
         
