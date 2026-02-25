@@ -21,6 +21,7 @@ function App() {
             <Footer />
              <div>
                 <script src="JS/navegacion.js"></script>
+                <script src="JS/scroll.js"></script>
             </div>
         </Router>
        
