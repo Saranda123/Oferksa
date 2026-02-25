@@ -1,25 +1,31 @@
-console.log('Script cargado correctamente');
-document.addEventListener('DOMContentLoaded', function () {
-    navegacionFija();
-});
+import { useEffect } from 'react';
 
-function navegacionFija() {
+function useFixedNavigation() {
+  useEffect(() => {
     const navegacion = document.querySelector('.navegacion') || document.querySelector('.nav-bg');
     const referencia = document.querySelector('.questionario') || document.querySelector('main');
 
     if (!navegacion || !referencia) {
-        return;
+      return undefined;
     }
 
-    // Asegura compatibilidad con los estilos existentes (.navegacion.fijo)
     navegacion.classList.add('navegacion');
 
-    window.addEventListener('scroll', function () {
-        if (referencia.getBoundingClientRect().bottom < 1) {
-            navegacion.classList.add('fijo');
-        } else {
-            navegacion.classList.remove('fijo');
-        }
-    });
+    const handleScroll = () => {
+      if (referencia.getBoundingClientRect().bottom < 1) {
+        navegacion.classList.add('fijo');
+      } else {
+        navegacion.classList.remove('fijo');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 }
 
+export default useFixedNavigation;

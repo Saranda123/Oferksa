@@ -7,9 +7,11 @@ import Nosotros from "./Pages/nosotros";
 import Venta from "./Pages/en-venta";
 import Enter from "./Pages/ingresar";
 import useScrollAnimation from "./JS/scroll";
+import useFixedNavigation from "./JS/navegacion";
 
 function App() {
     useScrollAnimation();
+    useFixedNavigation();
 
     return (
         <Router>
