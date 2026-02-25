@@ -1,6 +1,6 @@
-import Experiencia from "../Components/sobre";
-import Mision from "../Components/mision";
-import Vision from "../Components/vision";
+import Experiencia from "../Components/nosotros/sobre";
+import Mision from "../Components/nosotros/mision";
+import Vision from "../Components/nosotros/vision";
 
 function Nosotros() {
     return (

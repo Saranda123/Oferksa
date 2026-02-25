@@ -1,5 +1,8 @@
+console.log('Script cargado correctamente');
+
 document.addEventListener('DOMContentLoaded', function () {
     navegacionFija();
+    spawnservicios();
 });
 
 function navegacionFija() {
@@ -21,3 +24,4 @@ function navegacionFija() {
         }
     });
 }
+

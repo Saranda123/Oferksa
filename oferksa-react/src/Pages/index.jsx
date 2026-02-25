@@ -1,6 +1,6 @@
-import Questionario from "../Components/questionario";
-import Servicios from "../Components/servicios";
-import Contact from "../Components/contact";
+import Questionario from "../Components/home/questionario";
+import Servicios from "../Components/home/servicios";
+import Contact from "../Components/home/contact";
 
 function Index() {
     return(

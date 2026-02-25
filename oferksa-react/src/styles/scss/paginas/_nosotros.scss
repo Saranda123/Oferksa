@@ -5,10 +5,11 @@
     background-image: url('/src/assets/img/Computador-A.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 1000px;
     position: relative;
     color: v.$oscuro;
     background-position:center center;
+    margin-top: 5rem;
     @include m.tablet {
         height: 450px;
     }
@@ -29,12 +30,22 @@
     color: v.$grisClaro;
 }
 
+.informacion_nosotros h2{
+    margin-bottom: 0;
+}
+
 .parafo-sobre-nosotros{
-    width: 50%;
-    padding-bottom: 2rem;
-    p{
-        line-height: 1.35;
+
+    width: 90%;
+
+    @include m.desktop {
+        width: 50%;
+        padding-bottom: 2rem;
+        p{
+            line-height: 1.35;
+        }
     }
+    
 }
 
 .mision_vision{

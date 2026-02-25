@@ -1,0 +1,22 @@
+.ubicacion{
+    width: 100%; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.habitaciones,
+.Baños,
+.Parqueaderos,
+.precio{
+    width: 22%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.ubicacion,
+.habitaciones,
+.Baños,
+.Parqueaderos,
+.precio{
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
