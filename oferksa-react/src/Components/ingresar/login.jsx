@@ -3,7 +3,7 @@ import { login } from "../../JS/auth";
 
 function Login() {
 
-    const [user, setUser] = useState("");
+    const [usuario, setUsuario] = useState("");
     const [password, setPassword] = useState("");
 
     const handleLogin = async (e) => {
@@ -11,11 +11,10 @@ function Login() {
 
         try {
             const data = await login(usuario, password);
-            console.log(data);
-            alert(JSON.stringify(data));
+            alert(data.message || "Inicio de sesión exitoso");
         } catch (error) {
             console.error(error);
-            alert("Error al iniciar sesión");
+            alert(error.message || "Error al iniciar sesión");
         }
     };
 
@@ -36,8 +35,8 @@ function Login() {
                             placeholder="Usuario"
                             id="user"
                             required
-                            value={user}
-                            onChange={(e) => setUser(e.target.value)}
+                            value={usuario}
+                            onChange={(e) => setUsuario(e.target.value)}
                         />
 
                         <label htmlFor="user">
