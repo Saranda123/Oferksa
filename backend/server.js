@@ -1,20 +1,33 @@
 require('dotenv').config();
 const express = require('express');
 const pool = require('./config/db');
-require('dotenv').config();
+const cors = require('cors');
+// Importamos las dependencias necesarias
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-app.use(express.json());
+// se crea la constante app
 
-app.get('/test-db', async (req, res) => {
+app.use(cors());
+app.use(express.json());
+// solicitudes cors y json
+
+app.get('/', (req, res) => {
+    res.send('¡Hola, mundo!');
+});
+// Ruta de prueba
+
+app.get('/api/inmuebles', async (req, res) => {
     try {
-        const result = await pool.query('SELECT NOW()');
+        const result = await pool.query('SELECT * FROM inmuebles');
         res.json(result.rows);
-    }catch (err) {
+    } catch (err) {
         console.error(err);
-        res.status(500).json({ error: 'Database connection failed' });
+        res.status(500).json({ error: 'Error al obtener los inmuebles' });
     }
 });
+//ruta API
 
-app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
+app.listen(3000, () => {
+    console.log('Servidor escuchando en el puerto 3000');
+});
+// iniciar el servidor en el puerto 3000
