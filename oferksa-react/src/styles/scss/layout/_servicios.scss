@@ -1,6 +1,11 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 /*Servicios*/
+.servicios-contenedor{
+    background-color: v.$grisClaro;
+    margin: 4rem, 4rem;
+    padding: 1rem, 0;
+}
 .servicios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

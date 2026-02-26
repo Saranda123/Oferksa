@@ -1,6 +1,6 @@
 function Servicios() {
     return (
-        <section className="contenedor">
+        <section className="contenedor servicios-contenedor">
             <h2>Servicios</h2>
             <div className="servicios">
                 <section className="servicio scroll-reveal" data-scroll>

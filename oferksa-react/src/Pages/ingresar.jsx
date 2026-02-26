@@ -1,10 +1,10 @@
-
+import Login from "../Components/ingresar/login";
 
 function Enter() {
     return (
-        <div>
-            <h2>Iniciar sesión</h2>
-        </div>
+        <>
+            <Login />
+        </>
     );
 }
 

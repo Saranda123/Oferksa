@@ -1,14 +1,14 @@
 function Contact() {
     return (
         <div className="contact">
-            <section className="formulario">
+            <section className="formulario scroll-reveal" data-scroll>
                 {/* Sección de contacto de la página */}
                 <h2>Contáctanos</h2>
 
                 <form>
                     <fieldset>
                         <legend>Contactanos Llenando Todos Los Campos Del Formulario</legend>
-                        <div className="contenedor_campos">
+                        <div className="contenedor_campos" >
                             <div className="campos">
                                 <label htmlFor="name">Nombre</label>
                                 <input className="input-text" type="text" placeholder="Nombre" id="name"/>

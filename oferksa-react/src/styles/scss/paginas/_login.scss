@@ -1,0 +1,78 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.login{
+    justify-content: center;
+    align-items: center;
+}
+
+.Log-in{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    @include m.tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 50%;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        border: 1px solid v.$oscuro;
+        margin: 5rem 0 5rem 30rem;
+    }
+}
+
+.log-in_name{
+    @include m.tablet {
+        background-color: v.$color1;
+        border-radius: 0 20rem 20rem 0 ;
+        align-items: center;
+        justify-content: right;
+        h3{  
+            padding: 10rem;
+            color: v.$blanco;
+        }
+    }
+      
+}
+
+.log-in_questions{
+    @include m.tablet {
+        padding: 2rem 0;
+        grid-column: span 2;
+        width: 90%;
+    }
+    
+}
+
+.input-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        border: 1px solid v.$grisClaro;
+        font-family: v.$fuente_principal;
+    }
+
+    label{
+        position: absolute;
+        right: 10%;
+        color: v.$gris;
+    }
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    @include m.tablet {
+        padding: 0;
+    }
+}

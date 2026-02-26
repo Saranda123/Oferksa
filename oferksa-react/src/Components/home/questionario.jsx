@@ -1,7 +1,7 @@
 function Questionario({ tipo = "simple" }) {
     if (tipo === "simple") {
         return (
-            <section className="questionario">
+            <section className="questionario ">
                 <div className="questionario-info scroll-reveal" data-scroll>
                     <h2>Encuentra tu hogar ideal</h2>
                     <form className="buscador">
