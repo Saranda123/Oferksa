@@ -15,3 +15,4 @@ export const login = async (usuario, password) => {
 
     return data;
 };
+// Función para realizar la solicitud de inicio de sesión al backend

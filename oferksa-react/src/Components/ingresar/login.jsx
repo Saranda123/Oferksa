@@ -5,6 +5,7 @@ function Login() {
 
     const [usuario, setUsuario] = useState("");
     const [password, setPassword] = useState("");
+    // Estados para almacenar el usuario y la contraseña ingresados por el usuario
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -17,6 +18,7 @@ function Login() {
             alert(error.message || "Error al iniciar sesión");
         }
     };
+    // Función para manejar el envío del formulario de inicio de sesión
 
     return (
         <section className="login">

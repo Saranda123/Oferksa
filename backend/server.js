@@ -57,7 +57,7 @@ app.get('/api/inmuebles', async (req, res) => {
         res.status(500).json({ error: 'Error al obtener los inmuebles' });
     }
 });
-//ruta API
+//ruta Inmuebles
 
 app.post('/api/login', async (req, res) => {
     try {
@@ -92,6 +92,7 @@ app.post('/api/login', async (req, res) => {
         res.status(500).json({ error: 'Error al iniciar sesión' });
     }
 });
+//ruta Login
 
 app.listen(3000, () => {
     console.log('Servidor escuchando en el puerto 3000');
