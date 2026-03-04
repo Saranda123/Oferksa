@@ -53,6 +53,10 @@ Se están utilizando claves foráneas para mantener la integridad de los datos.
     Crear endpoint GET /api/inmuebles
     Conectar React con backend
 
+## 🚀Live demo
+
+[https://sanriagofreelancer.netlify.app/](https://oferksa.netlify.app/)
+
 ## Ejecutar el Proyecto
 
 ### backend
