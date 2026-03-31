@@ -55,7 +55,7 @@ Se están utilizando claves foráneas para mantener la integridad de los datos.
 
 ## 🚀Live demo
 
-[https://sanriagofreelancer.netlify.app/](https://oferksa.netlify.app/)
+[https://oferksa.netlify.app/](https://oferksa.netlify.app/)
 
 ## Ejecutar el Proyecto
 
